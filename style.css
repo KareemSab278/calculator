@@ -1,0 +1,32 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 50px;
+}
+
+#calc-space button {
+  font-size: 20px;
+  margin: 5px;
+  padding: 10px;
+  color: black;
+}
+
+#calc-display {
+  margin: 20px auto;
+  font-size: 24px;
+  padding: 10px;
+  border: 1px solid black;
+  width: 300px;
+  text-align: center;
+}
+
+#calculate-total {
+  font-size: 20px;
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: rgb(9, 167, 143);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
