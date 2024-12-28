@@ -3,27 +3,35 @@ const calcDisplay = document.getElementById('calc-display');
 const calculateTot = document.getElementById('calculate-total');
 
 let StringOperation = ''; // this string holds the whole operation
+const breakline = document.createElement('br');
 
-for (let i = 0; i < 10; i++) {
+
+for (let i = 0; i < 11; i++) {
     const button = document.createElement('button');
     button.id = `button${i}`;
     button.style.color = 'black';
     button.textContent = i;
+    if (i === 5){
+        calcSpace.appendChild(breakline.cloneNode()); // creates a <div> for the buttons.
+    }
     button.addEventListener('click', () => {
         StringOperation += i; 
         updateDisplay();
     });
-    calcSpace.appendChild(button); 
+    calcSpace.appendChild(button);
+    
 };
 
 const operators = ['+', '-', '*', '/', '(', ')', '.'];
-
 operators.forEach((op) => {
     const button = document.createElement('button'); //i have no idead how i did this. copied it online
     button.id = `button-${op}`;
     button.style.color = 'black';
     button.textContent = op;
     button.style = 'background-color: rgb(9, 167, 143); color: white; padding: 10px 20; font-size: 24px'
+    if (op === '+'){
+        calcSpace.appendChild(breakline.cloneNode()); // creates a <div> for the buttons.
+    }
     button.addEventListener('click', () => {
         StringOperation += op;
         updateDisplay();
