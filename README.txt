@@ -22,10 +22,6 @@ CSS: Basic styling for the calculator.
 
 Installation
 
-Clone the repository:
-
-git clone https://github.com/your-username/js-calculator.git
-
 Navigate to the project directory:
 
 cd js-calculator
